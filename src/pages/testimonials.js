@@ -1,19 +1,17 @@
-import * as React from "react";
+import React from "react";
 
-// Components
 import MainHeader from "./components/MainHeader";
-import HomeBody from "./components/HomeBody";
+import TestimonialsBody from "./components/TestimonialsBody";
 import MainFooter from "./components/MainFooter";
 
-// markup
-const IndexPage = () => {
+const TestimonialPage = () => {
   return (
     <main>
       <MainHeader />
-      <HomeBody />
+      <TestimonialsBody />
       <MainFooter />
     </main>
   );
 };
 
-export default IndexPage;
+export default TestimonialPage;

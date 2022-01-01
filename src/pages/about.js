@@ -1,19 +1,18 @@
-import * as React from "react";
+import React from "react";
 
 // Components
 import MainHeader from "./components/MainHeader";
-import HomeBody from "./components/HomeBody";
+import AboutBody from "./components/AboutBody";
 import MainFooter from "./components/MainFooter";
 
-// markup
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <main>
       <MainHeader />
-      <HomeBody />
+      <AboutBody />
       <MainFooter />
     </main>
   );
 };
 
-export default IndexPage;
+export default AboutPage;

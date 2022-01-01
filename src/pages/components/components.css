@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:ital,wght@1,500&display=swap");
+
+/* Header */
+.main-header {
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 14px;
+}
+.main-header-mobile {
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+.mobile-link {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#mobile-1 {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+}
+#mobile-2 {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+#mobile-3 {
+  width: 33%;
+  display: flex;
+}
+.header-link {
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #707070;
+}
+
+/* Footer */
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: #000000;
+  color: rgb(150, 150, 150);
+  border-top: 5px solid #aa0017;
+  font-family: "Lato", sans-serif;
+}
+.main-footer-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000;
+  color: rgb(150, 150, 150);
+  border-top: 5px solid #aa0017;
+  font-family: "Lato", sans-serif;
+}
+.rhys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: linear-gradient(to left, #e66465, #9198e5);
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+/* Home Page */
+#home-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black),
+    url("../../images/kitchen2.jpg");
+  background-attachment: fixed;
+  height: calc(100vh - 200px);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  padding-bottom: 100px;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+#home-about {
+  display: flex;
+  background-color: #cecece;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#home-suppliers {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+.custom-button {
+  padding: 10px;
+  background-color: #aa0017;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.custom-button-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+#home-about-text {
+  width: 45%;
+  font-family: "Lato", sans-serif;
+  font-size: 23px;
+  font-weight: 200;
+}
+#home-about-text-mobile {
+  width: 80%;
+  font-family: "Lato", sans-serif;
+  font-size: 23px;
+  font-weight: 200;
+}
+#home-process {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/kitchen3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.home-process-text-container {
+  display: flex;
+}
+.home-process-text {
+  width: 50%;
+}
+.left {
+  justify-content: flex-start;
+  text-align: left;
+}
+.right {
+  justify-content: flex-end;
+  text-align: left;
+}
+#ksa {
+  display: flex;
+  justify-content: center;
+}
+#home-suppliers-title {
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+#home-suppliers-images {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 50px;
+}
+#home-testimonials {
+  background-color: #cecece;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+#home-suppliers-title {
+  color: #515051;
+  font-size: 23px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Testimonials Page */
+#testimonials-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/kitchen4.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+#testimonials-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #cecece;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.testimonial {
+  width: 100%;
+  color: #c2c2c2;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+.text-container {
+  width: 50%;
+  display: flex;
+  background-color: rgb(39, 39, 39);
+  padding: 20px;
+  border-radius: 3px;
+}
+.left {
+  justify-content: flex-start;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Services Page */
+#services-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/kitchen4.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+.service {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.service-title {
+  font-family: "Lato", sans-serif;
+}
+.service-image-text-container {
+  display: flex;
+  justify-content: space-between;
+}
+.service-image-text-container-mobile {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.service-body {
+  font-family: "Lato", sans-serif;
+  width: 50%;
+  padding-right: 30px;
+  font-size: 20px;
+}
+.service-body-mobile {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* About Page */
+#about-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/kitchen4.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+#about-text {
+  font-family: "Lato", sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Contact Page */
+#contact-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/kitchen4.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+#contact-contents {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 20px;
+}
+.contact-type {
+  /* border: 1px solid red; */
+  width: 150px;
+  height: 50px;
+}

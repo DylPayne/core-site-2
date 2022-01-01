@@ -1,19 +1,18 @@
-import * as React from "react";
+import React from "react";
 
 // Components
 import MainHeader from "./components/MainHeader";
-import HomeBody from "./components/HomeBody";
+import ContactBody from "./components/ContactBody";
 import MainFooter from "./components/MainFooter";
 
-// markup
-const IndexPage = () => {
+const ContactPage = () => {
   return (
     <main>
       <MainHeader />
-      <HomeBody />
+      <ContactBody />
       <MainFooter />
     </main>
   );
 };
 
-export default IndexPage;
+export default ContactPage;

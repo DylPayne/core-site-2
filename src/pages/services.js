@@ -1,19 +1,18 @@
-import * as React from "react";
+import React from "react";
 
 // Components
 import MainHeader from "./components/MainHeader";
-import HomeBody from "./components/HomeBody";
+import ServicesBody from "./components/ServicesBody";
 import MainFooter from "./components/MainFooter";
 
-// markup
-const IndexPage = () => {
+const ServicesPage = () => {
   return (
     <main>
       <MainHeader />
-      <HomeBody />
+      <ServicesBody />
       <MainFooter />
     </main>
   );
 };
 
-export default IndexPage;
+export default ServicesPage;
