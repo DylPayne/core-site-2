@@ -58,7 +58,7 @@ const HomeBody = () => {
               and stress out of your home or kitchen alteration.
             </p>
             <StaticImage
-              src="../../images/kitchen1.jpg"
+              src="../../images/livingroom1.jpg"
               height={400}
               alt="kitchen"
               quality={100}

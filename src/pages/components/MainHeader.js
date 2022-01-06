@@ -69,6 +69,7 @@ const MainHeader = () => {
             width={200}
             alt="logo"
             quality={100}
+            placeholder="blurred"
           />
           <Stack direction="row" spacing={4}>
             <Link to="/" className="header-link">
@@ -95,7 +96,7 @@ const MainHeader = () => {
         <header className="main-header-mobile">
           <div id="mobile-1">
             <Button onClick={() => setOpen(true)}>
-              <MenuIcon style={{ color: "black" }} />
+              <MenuIcon style={{ color: "rgb(127, 127, 127)" }} />
             </Button>
           </div>
           <div id="mobile-2">
