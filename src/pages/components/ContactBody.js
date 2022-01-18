@@ -1,33 +1,133 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 
 // CSS
 import "./components.css";
 
+// MUI
+import { TextField, Button, FormControl } from "@mui/material";
+import { flexbox, margin } from "@mui/system";
+
 const ContactBody = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_js4chue",
+        "template_h3ih17x",
+        form.current,
+        "user_AvdqkQRo1Tj2mPGvjiX7N"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setEmail("");
+          setSubject("");
+          setName("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <main>
-      <div id="contact-banner">
-        <h1>Contact Us</h1>
-      </div>
-      <div id="contact-contents">
-        <table id="contact-table">
-        <tr>
-            <td className="contact-type">Address:</td>
-            <td className="contact-detail">29 Estmil Road, Elfindale, Diep River, 7945</td>
-          </tr>
-          <tr>
-            <td className="contact-type">Cell:</td>
-            <td className="contact-detail">(079) 427 3172</td>
-          </tr>
-          <tr>
-            <td className="contact-type">Telephone:</td>
-            <td className="contact-detail">(021) 712 6147</td>
-          </tr>
-          <tr>
-            <td className="contact-type">Email:</td>
-            <td className="contact-detail">info@coreinteriors.co.za</td>
-          </tr>
-        </table>
+      <div>
+        <form
+          onSubmit={sendEmail}
+          ref={form}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "60%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: 50,
+            marginBottom: 50,
+          }}
+          id="contact-form"
+        >
+          <TextField
+            label="Name"
+            name="from_name"
+            variant="outlined"
+            className="contact-field"
+            size="small"
+            fullWidth
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            form
+          />
+          <TextField
+            label="Email"
+            name="user_email"
+            variant="outlined"
+            className="contact-field"
+            size="small"
+            fullWidth
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            margin="normal"
+          />
+          <TextField
+            label="Subject"
+            name="subject"
+            variant="outlined"
+            className="contact-field"
+            size="small"
+            fullWidth
+            value={subject}
+            onChange={(e) => {
+              setSubject(e.target.value);
+            }}
+            margin="normal"
+          />
+          <TextField
+            label="Message"
+            name="message"
+            variant="outlined"
+            className="contact-field"
+            size="small"
+            multiline
+            rows={6}
+            fullWidth
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+          />
+          <br />
+          <div style={{ width: "40%" }}>
+            <Button
+              variant="outlined"
+              size="large"
+              fullWidth
+              color="error"
+              type="submit"
+              onClick={sendEmail}
+              form="email"
+            >
+              Send
+            </Button>
+          </div>
+        </form>
       </div>
     </main>
   );

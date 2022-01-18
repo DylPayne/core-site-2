@@ -64,7 +64,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 200px;
+  height: 250px;
   background-color: #000000;
   color: rgb(150, 150, 150);
   border-top: 5px solid #aa0017;
@@ -170,7 +170,7 @@
   display: flex;
 }
 .home-process-text {
-  width: 50%;
+  width: 100%;
 }
 .left {
   justify-content: flex-start;
@@ -222,9 +222,9 @@
   align-items: center;
   height: 300px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/kitchen10.jpg");
+    url("../../images/kitchen5.jpg");
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   font-family: "Lato", sans-serif;
   color: white;
@@ -234,12 +234,12 @@
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
-  background-color: #cecece;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: #5a5a5a;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .testimonial {
-  width: 100%;
+  width: 90%;
   color: #c2c2c2;
   font-size: 20px;
   font-family: "Lato", sans-serif;
@@ -249,6 +249,7 @@
   width: 100%;
   display: flex;
   background-color: rgb(39, 39, 39);
+  filter: drop-shadow(0 0 0.25rem black);
   padding: 20px;
   border-radius: 3px;
 }
@@ -355,4 +356,11 @@
   /* border: 1px solid red; */
   width: 150px;
   height: 50px;
+}
+
+#contact-form {
+  min-height: calc(100vh - 350px);
+}
+.contact-field {
+  margin: 10px;
 }
